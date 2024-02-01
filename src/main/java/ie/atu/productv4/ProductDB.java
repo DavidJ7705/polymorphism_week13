@@ -1,30 +1,29 @@
 package ie.atu.productv4;
 
-import ie.atu.productv3.Book;
-import ie.atu.productv3.Product;
-import ie.atu.productv3.Software;
+
 
 public class ProductDB {
 
-    public static ie.atu.productv3.Product getProduct(String productCode) {
+    public static ie.atu.productv4.Product getProduct(String productCode) {
 
         Product myProduct = null;
+
         if (productCode.equalsIgnoreCase("studios")) {
-            ie.atu.productv3.Software mySoftware = new ie.atu.productv3.Software();
+            Software mySoftware = new Software();
             mySoftware.setCode(productCode);
             mySoftware.setDescription("Visual Studios");
             mySoftware.setPrice(57.50);
             mySoftware.setVersion("Microsoft 1.1");
             myProduct = mySoftware;
         } else if (productCode.equalsIgnoreCase("eclipse")) {
-            ie.atu.productv3.Software mySoftware = new ie.atu.productv3.Software();
+            Software mySoftware = new Software();
             mySoftware.setCode(productCode);
             mySoftware.setDescription("Build Java apps");
             mySoftware.setPrice(57.50);
             mySoftware.setVersion("Eclipse Neon");
             myProduct = mySoftware;
         } else if (productCode.equalsIgnoreCase("oracle")) {
-            ie.atu.productv3.Software mySoftware = new Software();
+            Software mySoftware = new Software();
             mySoftware.setCode(productCode);
             mySoftware.setDescription("Latest MySQL");
             mySoftware.setPrice(54.50);
@@ -33,21 +32,21 @@ public class ProductDB {
         }
 
         if (productCode.equalsIgnoreCase("java")) {
-            ie.atu.productv3.Book myBook = new ie.atu.productv3.Book();
+           Book myBook = new Book();
             myBook.setCode(productCode);
             myBook.setDescription("ATU Java Programming");
             myBook.setPrice(57.50);
             myBook.setAuthor("Joe Brown");
             myProduct=myBook;
         } else if (productCode.equalsIgnoreCase("jsp")) {
-            ie.atu.productv3.Book myBook = new ie.atu.productv3.Book();
+           Book myBook = new Book();
             myBook.setCode(productCode);
             myBook.setDescription("Java Servlets and JSP");
             myBook.setPrice(57.50);
             myBook.setAuthor("Mike White");
             myProduct=myBook;
         } else if (productCode.equalsIgnoreCase("mysql")) {
-            ie.atu.productv3.Book myBook = new Book();
+         Book myBook = new Book();
             myBook.setCode(productCode);
             myBook.setDescription("Lennon's MySQL");
             myBook.setPrice(54.50);
@@ -55,7 +54,7 @@ public class ProductDB {
             myProduct=myBook;
         }
 
-        if (productCode.equalsIgnoreCase("java")) {
+        if (productCode.equalsIgnoreCase("why")) {
             ie.atu.productv4.Music myMusic = new ie.atu.productv4.Music();
             myMusic.setCode(productCode);
             myMusic.setDescription("Why ");
@@ -63,19 +62,19 @@ public class ProductDB {
             myMusic.setArtist("Dominic Fike");
             myMusic.setLabel("Columbia Records");
             myProduct=myMusic;
-        } else if (productCode.equalsIgnoreCase("jsp")) {
+        } else if (productCode.equalsIgnoreCase("sky")) {
             ie.atu.productv4.Music myMusic = new ie.atu.productv4.Music();
             myMusic.setCode(productCode);
-            myMusic.setDescription("ATU Java Programming");
-            myMusic.setPrice(57.50);
-            myMusic.setArtist("Joe Brown");
+            myMusic.setDescription("Touch the Sky");
+            myMusic.setPrice(1000000);
+            myMusic.setArtist("Kanye West");
             myProduct=myMusic;
-        } else if (productCode.equalsIgnoreCase("Fortnite")) {
+        } else if (productCode.equalsIgnoreCase("fade")) {
             ie.atu.productv4.Music myMusic = new ie.atu.productv4.Music();
             myMusic.setCode(productCode);
-            myMusic.setDescription("ATU Java Programming");
-            myMusic.setPrice(57.50);
-            myMusic.setArtist(" ");
+            myMusic.setDescription("Imagine if ninja got a low taper fade");
+            myMusic.setPrice(2.00);
+            myMusic.setArtist("Ninja");
             myProduct=myMusic;
         }
 

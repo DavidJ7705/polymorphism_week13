@@ -1,7 +1,5 @@
 package ie.atu.productv4;
 
-import ie.atu.productv3.Product;
-import ie.atu.productv3.ProductDB;
 
 import java.util.Scanner;
 

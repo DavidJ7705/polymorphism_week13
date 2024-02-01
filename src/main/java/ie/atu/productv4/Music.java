@@ -1,6 +1,5 @@
 package ie.atu.productv4;
 
-import ie.atu.productv3.Product;
 
 public class Music extends Product {
 
@@ -25,5 +24,6 @@ public class Music extends Product {
     public void setLabel(String label) {this.label = label;}
 
     @Override
-    public String toString() {return super.toString() + " by " + artist;}
+    public String toString() {return super.toString() + " by " + artist + "\n"+label;}
+
 }
