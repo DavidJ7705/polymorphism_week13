@@ -68,6 +68,7 @@ public class ProductDB {
             myMusic.setDescription("Touch the Sky");
             myMusic.setPrice(1000000);
             myMusic.setArtist("Kanye West");
+            myMusic.setLabel("Columbia Records");
             myProduct=myMusic;
         } else if (productCode.equalsIgnoreCase("fade")) {
             ie.atu.productv4.Music myMusic = new ie.atu.productv4.Music();
@@ -75,7 +76,34 @@ public class ProductDB {
             myMusic.setDescription("Imagine if ninja got a low taper fade");
             myMusic.setPrice(2.00);
             myMusic.setArtist("Ninja");
+            myMusic.setLabel("Epic Games");
             myProduct=myMusic;
+        }
+
+        if (productCode.equalsIgnoreCase("toshiba")) {
+            ie.atu.productv4.Television myTelevision = new ie.atu.productv4.Television();
+            myTelevision.setCode(productCode);
+            myTelevision.setDescription("Toshiba Smart TV");
+            myTelevision.setPrice(384.00);
+            myTelevision.setScreen_Size("43' ");
+            myTelevision.setManufacture("Toshiba");
+            myProduct=myTelevision;
+        } else if (productCode.equalsIgnoreCase("Ae40")) {
+            ie.atu.productv4.Television myTelevision = new ie.atu.productv4.Television();
+            myTelevision.setCode(productCode);
+            myTelevision.setDescription("China LCD Tv OEM Hotel tv ");
+            myTelevision.setPrice(296.53);
+            myTelevision.setScreen_Size("32' ");
+            myTelevision.setManufacture("Ali Express");
+            myProduct=myTelevision;
+        } else if (productCode.equalsIgnoreCase("LG55")) {
+            ie.atu.productv4.Television myTelevision = new ie.atu.productv4.Television();
+            myTelevision.setCode(productCode);
+            myTelevision.setDescription("LG OLED 4K UHD Smart TV ");
+            myTelevision.setPrice(1289);
+            myTelevision.setScreen_Size("55' ");
+            myTelevision.setManufacture("LG");
+            myProduct=myTelevision;
         }
 
         return myProduct;

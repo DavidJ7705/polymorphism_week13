@@ -24,6 +24,6 @@ public class Music extends Product {
     public void setLabel(String label) {this.label = label;}
 
     @Override
-    public String toString() {return super.toString() + " by " + artist + "\n"+label;}
+    public String toString() {return super.toString() + " by " + artist + "\nRecord Label: "+label;}
 
 }
